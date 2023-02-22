@@ -1,0 +1,16 @@
+C:\Users\ThinkPad W541\Documents\GitHub\C#_Infix_Convert\Infix_Converter\Infix_Converter\bin\Debug\net5.0\Infix_Converter.exe
+C:\Users\ThinkPad W541\Documents\GitHub\C#_Infix_Convert\Infix_Converter\Infix_Converter\bin\Debug\net5.0\Infix_Converter.deps.json
+C:\Users\ThinkPad W541\Documents\GitHub\C#_Infix_Convert\Infix_Converter\Infix_Converter\bin\Debug\net5.0\Infix_Converter.runtimeconfig.json
+C:\Users\ThinkPad W541\Documents\GitHub\C#_Infix_Convert\Infix_Converter\Infix_Converter\bin\Debug\net5.0\Infix_Converter.runtimeconfig.dev.json
+C:\Users\ThinkPad W541\Documents\GitHub\C#_Infix_Convert\Infix_Converter\Infix_Converter\bin\Debug\net5.0\Infix_Converter.dll
+C:\Users\ThinkPad W541\Documents\GitHub\C#_Infix_Convert\Infix_Converter\Infix_Converter\bin\Debug\net5.0\Infix_Converter.pdb
+C:\Users\ThinkPad W541\Documents\GitHub\C#_Infix_Convert\Infix_Converter\Infix_Converter\obj\Debug\net5.0\Infix_Converter.csproj.AssemblyReference.cache
+C:\Users\ThinkPad W541\Documents\GitHub\C#_Infix_Convert\Infix_Converter\Infix_Converter\obj\Debug\net5.0\Infix_Converter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThinkPad W541\Documents\GitHub\C#_Infix_Convert\Infix_Converter\Infix_Converter\obj\Debug\net5.0\Infix_Converter.AssemblyInfoInputs.cache
+C:\Users\ThinkPad W541\Documents\GitHub\C#_Infix_Convert\Infix_Converter\Infix_Converter\obj\Debug\net5.0\Infix_Converter.AssemblyInfo.cs
+C:\Users\ThinkPad W541\Documents\GitHub\C#_Infix_Convert\Infix_Converter\Infix_Converter\obj\Debug\net5.0\Infix_Converter.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad W541\Documents\GitHub\C#_Infix_Convert\Infix_Converter\Infix_Converter\obj\Debug\net5.0\Infix_Converter.dll
+C:\Users\ThinkPad W541\Documents\GitHub\C#_Infix_Convert\Infix_Converter\Infix_Converter\obj\Debug\net5.0\refint\Infix_Converter.dll
+C:\Users\ThinkPad W541\Documents\GitHub\C#_Infix_Convert\Infix_Converter\Infix_Converter\obj\Debug\net5.0\Infix_Converter.pdb
+C:\Users\ThinkPad W541\Documents\GitHub\C#_Infix_Convert\Infix_Converter\Infix_Converter\obj\Debug\net5.0\Infix_Converter.genruntimeconfig.cache
+C:\Users\ThinkPad W541\Documents\GitHub\C#_Infix_Convert\Infix_Converter\Infix_Converter\obj\Debug\net5.0\ref\Infix_Converter.dll
