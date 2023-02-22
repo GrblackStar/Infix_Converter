@@ -14,25 +14,35 @@ namespace Infix_Converter
             Console.WriteLine("Reverse Polish Notation  --->  POSTFIX:  STACK IMPLEMENTATION");
             Console.WriteLine(PolishNotationConverter.PostFixStack(inputExpression));
             Console.WriteLine();
-            
+            Console.WriteLine();
+            Console.WriteLine();
 
 
             inputExpression = "(" + inputExpression;
             inputExpression += ")";
 
+            Console.WriteLine("EXPRESSION  TREE ");
+            Console.WriteLine();
             ExpressionTree root = PolishNotationConverter.BuildTree(inputExpression);
             PolishNotationConverter.VisualizeTree(root);
 
 
             Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
             Console.WriteLine("Reverse Polish Notation  --->  POSTFIX:  TREE IMPLEMENTATION");
             PolishNotationConverter.PostFix(root);
+            Console.WriteLine();
+            Console.WriteLine();
             Console.WriteLine();
 
 
             Console.WriteLine();
             Console.WriteLine("Normal Polish Notation  --->  PREFIX:  TREE IMPLEMENTATION");
             PolishNotationConverter.PreFix(root);
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
             Console.WriteLine();
 
 

@@ -24,7 +24,13 @@ namespace Infix_Converter
 
             // stack for the characters:
             Stack<char> stackChars = new Stack<char>();
-            ExpressionTree t, t1, t2;
+            ExpressionTree t, t1, t2, t3;
+
+
+            // stacks in case we have assignment:
+            Stack<char> assignmentOps = new Stack<char>();
+            Stack<ExpressionTree> assignmentChars = new Stack<ExpressionTree>();
+
 
             // priority/precedence
             int[] priority = new int[123];
@@ -40,6 +46,15 @@ namespace Infix_Converter
                 if (inputString[i] == '(')
                 {
                     stackChars.Push(inputString[i]);  // Pushing to the stack 
+                }
+                else if ((Char.IsLetter(inputString[i]) || Char.IsDigit(inputString[i]))   && inputString[i+1] == '=')
+                {
+                    t = NewNode(inputString[i]);
+                    assignmentChars.Push(t);
+                }
+                else if (inputString[i] == '=')
+                {
+                    assignmentOps.Push(inputString[i]);
                 }
                 else if (Char.IsLetter(inputString[i])  || Char.IsDigit(inputString[i]))
                 {
@@ -97,6 +112,20 @@ namespace Infix_Converter
             }
 
             t = stackNodes.Peek();
+
+            while (assignmentOps.Count != 0)
+            {
+                if (assignmentOps.Count != 0 && assignmentChars.Count != 0)
+                {
+                    t3 = NewNode(assignmentOps.Pop());
+                    t3.Right = t;
+                    t3.Left = assignmentChars.Pop();
+                    stackNodes.Push(t3);
+                    
+                }
+                t = stackNodes.Peek();
+            }
+            
             return t;
 
         }
