@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infix_Converter
 {
@@ -201,12 +198,17 @@ namespace Infix_Converter
             Stack<char> stack = new Stack<char>();
             string output = "";
 
+            Console.WriteLine("    Current Symbol     Operator Stack    Postfix String  ");
+
             foreach (char c in expression)
             {
+                Console.Write("          {0, -2}", c);
+
                 if (Char.IsLetter(c) || Char.IsDigit(c))
                 {
                     output += c;
                     output += " ";
+
                 }
                 else if (c == '+' || c == '-' || c == '*' || c == '/')
                 {
@@ -239,6 +241,26 @@ namespace Infix_Converter
                 {
                     stack.Push((char)c);
                 }
+
+                string stackchars = "";
+                foreach (char ch in stack)
+                {
+                    //Console.Write(ch + " ");
+                    stackchars += ch;
+                    stackchars += " ";
+                }
+
+                Console.Write("                 {0, -20}", stackchars);
+
+                string outputchars = "";
+                foreach (char ch in output)
+                {
+                    outputchars += ch;
+                    outputchars += " ";
+                }
+                Console.Write("{0, -30}", outputchars);
+
+                Console.WriteLine();
             }
 
             while (stack.Count > 0)
@@ -246,8 +268,10 @@ namespace Infix_Converter
                 output += stack.Pop();
                 output += " ";
             }
+            Console.WriteLine();
+            Console.WriteLine();
 
-            return output;
+            return (expression + "   --->>>   " + output);
         }
         
     }

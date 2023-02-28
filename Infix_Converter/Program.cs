@@ -49,6 +49,6 @@ namespace Infix_Converter
 
         }
 
-        
+
     }
 }
