@@ -268,6 +268,13 @@ namespace Infix_Converter
                 output += stack.Pop();
                 output += " ";
             }
+
+            Console.Write("                                                 ");
+            foreach (char ch in output)
+            {
+                Console.Write(ch + " ");
+            }
+
             Console.WriteLine();
             Console.WriteLine();
 
